@@ -96,10 +96,9 @@ Custom property | Description | Default
           },
         }
       },
-      ready() {
-        Polymer.RenderStatus.afterNextRender(this, () => {
-          this.list = Polymer.dom(this.root).querySelector('#list');
-        });
+      attached() {
+        debugger;        
+        this.list = Polymer.dom(this.root).querySelector('#list');
       },
     });
   </script>
