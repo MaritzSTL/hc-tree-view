@@ -19,11 +19,13 @@ Custom property | Description | Default
   <template>
     <style>
       :host {
-        display: flex;
+        display: block;
         padding-top: 8px;
         padding-bottom: 8px;
-        height: 250px;
+        min-height: 250px;
         flex-direction: column;
+        height: auto;
+        overflow: hidden;
 
         @apply --hc-nested-list;
       }
