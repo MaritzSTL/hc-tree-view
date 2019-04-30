@@ -129,6 +129,7 @@ Custom property | Description | Default
         '__nodeSelected(item.state)',
       ],
       __stopClickEvent(event) {
+        event.preventDefault();
         // NOTE: This helper function is needed to avoid expansion upon selection of the
         // selection box.
         event.stopPropagation();
