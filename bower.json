@@ -4,7 +4,7 @@
   "main": "hc-tree-view.html",
   "dependencies": {
     "polymer": "Polymer/polymer#^1.9 || ^2.0",
-    "iron-list": "MaritzSTL/iron-list#^2.0.0",
+    "iron-list": "MaritzSTL/iron-list#jk/scroll-fix",
     "paper-tristate-checkbox": "Hackception/paper-tristate-checkbox#^0.3.0"
   },
   "devDependencies": {
