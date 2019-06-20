@@ -17,7 +17,7 @@
     "1.x": {
       "dependencies": {
         "polymer": "Polymer/polymer#^1.9",
-        "iron-list": "admwx7/iron-list#fix/issue-300"
+        "iron-list": "jay8t6/iron-list#fix/scroll-fix"
       },
       "devDependencies": {
         "iron-component-page": "PolymerElements/iron-component-page#^1.0.0",
@@ -26,7 +26,7 @@
         "webcomponentsjs": "webcomponents/webcomponentsjs#^0.7.0"
       },
       "resolutions": {
-        "iron-list": "fix/issue-300",
+        "iron-list": "fix/scroll-fix",
         "webcomponentsjs": "^0.7.0"
       }
     }
