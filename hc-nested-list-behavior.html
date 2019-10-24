@@ -194,7 +194,7 @@
       items.forEach((item) => {
         // Some properties need to be re-calculated every time we update the list to support lazy-loading
         item.depth = !(item.depth >= 0) ? this._getItemDepth(item, parts) : item.depth;
-        item.hasChildren = this.__calculateHasChildren(item, this.levelsCap);
+        item.hasChildren = this.__calculateHasChildren(item, parts, this.levelsCap);
 
         newItems.push(item);
         if (item.open)
@@ -262,10 +262,11 @@
      *
      * @private
      * @param {Object} item
+     * @param {Object} parts
      * @param {Number} levelsCap - number of hierarchy levels to permit
      * @return {Boolean}
      */
-    __calculateHasChildren(item, levelsCap) {
+    __calculateHasChildren(item, parts, levelsCap) {
       if(item.depth && levelsCap && levelsCap > -1) {
         if ((levelsCap-1) <= item.depth) return false;
       }
