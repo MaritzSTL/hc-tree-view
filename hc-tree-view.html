@@ -94,7 +94,9 @@ Custom property | Description | Default
           value() {
             return Boolean(Polymer.Element);
           },
-        }
+        },
+        /* Set number if constraining number of hierarchy levels from top of tree */
+        levelsCap: Number,
       },
       ready() {
         Polymer.RenderStatus.afterNextRender(this, () => {
