@@ -137,9 +137,9 @@
      */
     itemSelectedChanged({detail}) {
       if (detail.selected) {
-        this.selectItems([detail.item], true);
+        this.selectItems([detail.item]);
       } else {
-        this.deselectItems([detail.item], true);
+        this.deselectItems([detail.item]);
       }
       if (detail.state !== undefined && Polymer.Element) {
         this._updateState([detail.item], detail.state)
@@ -303,7 +303,7 @@
      * @param {String} [uniqueIdentifier = this.itemIdName] - Field uniquely identifying
      * each item in both sets.
      * @return {Object[]} - Return the set difference Set(items) - Set(referenceItems) or
-     * an empty array. 
+     * an empty array.
      */
     __uniqueItems(items, referenceItems = this.selectedItems, uniqueIdentifier = this.itemIdName) {
       if (!Array.isArray(items) || !Array.isArray(referenceItems)) return [];
