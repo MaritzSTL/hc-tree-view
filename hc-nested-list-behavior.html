@@ -92,7 +92,9 @@
      * @param {Function} update
      */
     fetchChildren(item, parts, update) {
-      update(parts);
+      Polymer.RenderStatus.afterNextRender(this, () => {
+        update(parts);
+      });
     },
     /**
      * Takes an item and looks up it's parent then returns it.
